@@ -25,13 +25,16 @@ $(document).ready(function(){
 			} 
         });
 		
-		 
+
+    });
+	
+
 
 	function info(x){
 	$('#main').empty();
 
 		
-	var str = "http://greenmunchies.tk/app712/traerf.php?codigo=";
+	var str = "http://greenmunchies.tk/app712/traerf.php?codigo="
 	var str2 = x;
 	var todo = str.concat(str2);
 			
@@ -108,7 +111,7 @@ $('#formulario')[0].reset();
             
 			for(k = 0; k<resultados.length; k++){
 				$.each(resultados[k], function(k, com){
-               	 	$("#vermas").append('<div class="esto"><a href="#debate1" onClick="info(' + f +')" id="'+ f +'">' + com + '</a></div></br>');
+               	 	$("#vermas").append('<a href="#debate1" onClick="info(' + f +')" id="'+ f +'">' + com + '</a></br>');
             	});
 				
 				f++;
@@ -131,4 +134,3 @@ $('#formulario')[0].reset();
         });
         return false;
     });
-	
